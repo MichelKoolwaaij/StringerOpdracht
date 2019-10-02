@@ -7,7 +7,7 @@
 5. Als je een POST doet naar //localhost:8081/stringer/reverse dan krijg je op basis van een meegegeven string het hele object in json terug. Inclusief de http Ok status.
 6. Als je je end points hebt geschreven in de klasse Stringer, verplaats deze dan naar een controller. Als je het al direct in een controller had geplaatst, dan ben je dus nu klaar met deze stap.
 7. Waarschijnlijk heb je ergens in je controller een New staan om een instantie van Stringer te initialiseren. Gebruik setter injection en CDI om deze "new" weg te werken.
-8. Zorg ervoor dat als je http://localhost:8081/stringer/reverse/27+5 aanroept, de reverse van de optelling in json terug wordt gestuurd. Het bericht ziet er als volgt uit: {"Reverse calced":"585"}
+8. Zorg ervoor dat als je http://localhost:8081/stringer/reverse/27+5 aanroept, de reverse van de optelling in json terug wordt gestuurd. Het bericht ziet er als volgt uit: {"Reverse calced":"23"}
 9. Controleer of er in de bij 8 gebruikte parameter wel een +, - of * zit. Zo niet, retourneer dan een error code 400.
 10. Schrijf unit tests die aantonen dat de reverse methode van de klasse Stringer werkt.
 11. Schrijf unit tests die aantonen dat de endpoint die de reverse berekening terug geeft werkt.
