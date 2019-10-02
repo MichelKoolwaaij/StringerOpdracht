@@ -9,5 +9,6 @@
 7. Waarschijnlijk heb je ergens in je controller een New staan om een instantie van Stringer te initialiseren. Gebruik setter injection en CDI om deze "new" weg te werken.
 8. Zorg ervoor dat als je http://localhost:8081/stringer/reverse/27+5 aanroept, de reverse van de optelling in json terug wordt gestuurd. Het bericht ziet er als volgt uit: {"Reverse calced":"23"}
 9. Controleer of er in de bij 8 gebruikte parameter wel een +, - of * zit. Zo niet, retourneer dan een error code 400.
-10. Schrijf unit tests die aantonen dat de reverse methode van de klasse Stringer werkt.
-11. Schrijf unit tests die aantonen dat de endpoint die de reverse berekening terug geeft werkt.
+10. Schrijf een unit tests die aantoont dat deze 400 wordt gegooid.
+11. Schrijf unit tests die aantonen dat de reverse methode van de klasse Stringer werkt.
+
